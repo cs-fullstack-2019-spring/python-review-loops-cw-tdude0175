@@ -7,8 +7,8 @@
 def main():
     # problem1()
     # problem2()
-    problem3()
-    # bonus()
+    # problem3()
+    bonus()
 
 # you can also use a while loop
 #  if number == 3 or number == 6
@@ -88,12 +88,21 @@ def problem3():
 # *
 
 # build a loop
+# using a loop inside to go backwards
+#  doing it without a loop
+#  need to define the end of the line and when you hit the end start subtracting
+# growing without loops
 
 def bonus():
-    for y in range(0,7):
+    z = 0
+    for y in range(0,10):
+
         if y > 5:
-            for x in range(4,0,-1):
-                print("*"*x)
+            z+=2
+            print("*"*(y-z))
+
+            # for x in range(4,0,-1):
+            #     print("*"*x)
         else:
             print("*"*y)
 
