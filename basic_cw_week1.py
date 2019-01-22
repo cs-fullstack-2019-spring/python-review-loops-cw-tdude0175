@@ -7,8 +7,8 @@
 def main():
     # problem1()
     # problem2()
-    # problem3()
-    bonus()
+    problem3()
+    # bonus()
 
 # you can also use a while loop
 #  if number == 3 or number == 6
@@ -62,15 +62,17 @@ def problem2():
 #
 
 def problem3():
+    userInput = input("")
     while(True):
-        userInput = input("")
 
-        if (userInput == ""):
+        newInput = input("")
+
+        if (newInput== ""):
             print("")
             break
         else:
-            print(userInput,"\n")
-
+            userInput += ("\n" + newInput)
+    print(userInput)
 
 
 # Write a Python program to construct the following pattern, using a nested for loop.
